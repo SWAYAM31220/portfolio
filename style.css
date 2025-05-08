@@ -1,0 +1,145 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  /* Intro Section */
+  #intro {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+    transition: opacity 1s ease;
+  }
+  .line1, .line2, .animated-name, .tagline {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .line1 {
+    font-size: 1.5rem;
+  }
+  
+  .line2 {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-top: 0.5rem;
+    color: #ccc;
+  }
+  
+  .animated-name {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #00f0ff;
+  }
+  
+  
+  /* Main Content */
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: none;
+  }
+  #main-content {
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .neon-glow {
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { text-shadow: 0 0 10px #00f0ff; }
+    50% { text-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff; }
+    100% { text-shadow: 0 0 10px #00f0ff; }
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: #ccc;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    padding: 0.9rem 2rem;
+    background: linear-gradient(45deg, #00f0ff, #0fffd6);
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00f0ff;
+  }
+  
+  .social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .social-links a {
+    color: #00f0ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0fffd6;
+  }
+  
+  
+  /* Placeholder Sections */
+  .section {
+    padding: 5rem;
+    text-align: center;
+    color: #666;
+  }
+  
