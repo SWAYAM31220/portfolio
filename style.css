@@ -43,7 +43,7 @@
   }
   
   .animated-name {
-    font-size: 4rem;
+    font-size: clamp(2rem, 10vw, 4rem);;
     letter-spacing: 0.5rem;
     font-weight: 700;
   }
@@ -142,4 +142,8 @@
     text-align: center;
     color: #666;
   }
-  
+  @media (max-width: 600px) {
+  .animated-name {
+    font-size: 3rem;
+  }
+}
